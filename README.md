@@ -1,8 +1,6 @@
 Here is a professionally structured, complete **`README.md`** file tailored for your GitHub repository. It fixes all typos, formats the tables and architecture diagrams cleanly, cleans up the command placeholders, and formats the output into a polished, industry-standard project report.
 
----
 
-```markdown
 # NETWORKWALKS Cybersecurity Training Program
 ## Week 01: Cybersecurity Lab Setup (`NETWORKWALKS-Kuldeep-BO84-WK1-CYBERSECURITY-LAB-SETUP`)
 
@@ -11,7 +9,7 @@ Here is a professionally structured, complete **`README.md`** file tailored for 
 ![Focus](https://img.shields.io/badge/Focus-Network%20%26%20Lab%20Setup-red)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
----
+
 
 ## 📌 Project Overview
 
@@ -19,7 +17,7 @@ This repository documents the step-by-step setup and verification of a dedicated
 
 The main objective was to establish a secure, controlled, and isolated environment using **Oracle VirtualBox** and **Kali Linux**. The project covers virtual networking topology configuration, local IP/routing inspection, systematic DNS resolution and connectivity testing, snapshot management, and complete verification.
 
----
+
 
 ## 🎯 Objectives
 
