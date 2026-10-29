@@ -47,7 +47,6 @@ The main objective was to establish a secure, controlled, and isolated environme
 The host machine executes Oracle VirtualBox as the Type-2 hypervisor hosting the Kali Linux guest operating system. The guest VM communicates outbound through VirtualBox's internal NAT Engine and Network adapter.
 
 
-```
 
 +-------------------------------------------------------------+
 |                        Host Computer                        |
@@ -70,7 +69,7 @@ The host machine executes Oracle VirtualBox as the Type-2 hypervisor hosting the
 v
 [ External Internet ]
 
-```
+
 
 > **Note:** External connectivity depends on the host network status, gateway configuration, DNS settings, and applicable firewall rules.
 
@@ -243,7 +242,6 @@ cybersecurity-lab-setup/
     ├── 03-nat-network-configuration.png
     ├── 04-network-configuration.png
     └── 05-vm-snapshot.png
-
 
 
 
