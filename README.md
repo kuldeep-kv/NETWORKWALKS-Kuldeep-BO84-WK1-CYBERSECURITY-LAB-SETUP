@@ -1,7 +1,7 @@
 # NETWORKWALKS-Kuldeep-BO84-WK1-CYBERSECURITY-LAB-SETUP
 A hands-on cybersecurity lab setup using VirtualBox, Kali Linux, NAT networking, connectivity testing, and VM snapshots
 
- 🔐 Cybersecurity Lab Setup | VirtualBox & Kali Linux
+# 🔐 Cybersecurity Lab Setup | VirtualBox & Kali Linux
 <p align="center">
   <img src="https://img.shields.io/badge/Domain-Cybersecurity-0A66C2?style=for-the-badge" alt="Domain: Cybersecurity">
   <img src="https://img.shields.io/badge/Platform-VirtualBox-183A61?style=for-the-badge" alt="Platform: VirtualBox">
@@ -9,12 +9,12 @@ A hands-on cybersecurity lab setup using VirtualBox, Kali Linux, NAT networking,
   <img src="https://img.shields.io/badge/Focus-Networking-2E8B57?style=for-the-badge" alt="Focus: Networking">
 </p>
 
-📌 Project Overview
+# 📌 Project Overview
 This project documents the setup of a virtual cybersecurity lab using Oracle VirtualBox and Kali Linux. The objective was to establish a controlled environment for cybersecurity learning, configure virtual networking, verify connectivity and DNS resolution, and create a recovery point for future practical exercises.
 
 The project emphasizes hands-on implementation, systematic verification, troubleshooting, and technical documentation.
 
-🎯 Objectives
+# 🎯 Objectives
 Install and configure Oracle VirtualBox.
 Import and configure a Kali Linux virtual machine.
 Create a dedicated private NAT Network.
@@ -241,7 +241,7 @@ cybersecurity-lab-setup/
 
 The screenshot filenames above are suggested names. Ensure that the files you upload match the paths referenced in this README.
 
-✅ Conclusion
+** ✅ Conclusion ** 
 The project established a foundation for future cybersecurity lab exercises by combining virtualization, Linux networking, connectivity verification, and recovery planning.
 
 The main takeaway is that a reliable lab requires more than deploying a virtual machine: its configuration must be inspected, its connectivity tested, and its baseline documented before more advanced activities begin.
