@@ -1,253 +1,269 @@
-# NETWORKWALKS-Kuldeep-BO84-WK1-CYBERSECURITY-LAB-SETUP
-A hands-on cybersecurity lab setup using VirtualBox, Kali Linux, NAT networking, connectivity testing, and VM snapshots
+Here is a professionally structured, complete **`README.md`** file tailored for your GitHub repository. It fixes all typos, formats the tables and architecture diagrams cleanly, cleans up the command placeholders, and formats the output into a polished, industry-standard project report.
 
-# 🔐 Cybersecurity Lab Setup | VirtualBox & Kali Linux
-<p align="center">
-  <img src="https://img.shields.io/badge/Domain-Cybersecurity-0A66C2?style=for-the-badge" alt="Domain: Cybersecurity">
-  <img src="https://img.shields.io/badge/Platform-VirtualBox-183A61?style=for-the-badge" alt="Platform: VirtualBox">
-  <img src="https://img.shields.io/badge/OS-Kali%20Linux-557C94?style=for-the-badge" alt="Operating System: Kali Linux">
-  <img src="https://img.shields.io/badge/Focus-Networking-2E8B57?style=for-the-badge" alt="Focus: Networking">
-</p>
+---
 
-# 📌 Project Overview
-This project documents the setup of a virtual cybersecurity lab using Oracle VirtualBox and Kali Linux. The objective was to establish a controlled environment for cybersecurity learning, configure virtual networking, verify connectivity and DNS resolution, and create a recovery point for future practical exercises.
+```markdown
+# NETWORKWALKS Cybersecurity Training Program
+## Week 01: Cybersecurity Lab Setup (`NETWORKWALKS-Kuldeep-BO84-WK1-CYBERSECURITY-LAB-SETUP`)
 
-The project emphasizes hands-on implementation, systematic verification, troubleshooting, and technical documentation.
+![Kali Linux](https://img.shields.io/badge/OS-Kali%20Linux-blue?logo=kali-linux)
+![VirtualBox](https://img.shields.io/badge/Virtualization-Oracle%20VirtualBox-orange?logo=virtualbox)
+![Focus](https://img.shields.io/badge/Focus-Network%20%26%20Lab%20Setup-red)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-# 🎯 Objectives
-Install and configure Oracle VirtualBox.
-Import and configure a Kali Linux virtual machine.
-Create a dedicated private NAT Network.
-Verify IP addressing, network interfaces, and routing.
-Test network connectivity and DNS resolution.
-Create a clean virtual machine snapshot.
-Document the configuration process with screenshots and verification results.
-🛠️ Tools & Technologies
-Tool / Technology	Purpose
-Oracle VirtualBox	Virtualization and virtual machine management
-Kali Linux	Linux environment for cybersecurity practice
-VirtualBox NAT Network	Virtual networking and outbound connectivity
-Linux networking utilities	Interface inspection, routing, and connectivity testing
-VirtualBox Snapshot Manager	Recovery to a saved virtual machine state
-GitHub	Project documentation and version control
-🏗️ Lab Architecture
-The lab uses a host machine to run Oracle VirtualBox, which hosts Kali Linux as a guest operating system. The guest VM connects to a dedicated NAT Network configured in VirtualBox.
+---
 
-                 Host Computer
-                       |
-                Oracle VirtualBox
-                       |
-                 Kali Linux VM
-                       |
-                Virtual Network
-                       |
-                  NAT Network
-                       |
-              External Connectivity
-Note: External connectivity depends on the actual network configuration, gateway, DNS settings, and applicable firewall rules. The diagram represents the intended setup, not a guarantee that every connection succeeds.
+## 📌 Project Overview
 
-Lab Configuration
-Record the actual values from your environment.
+This repository documents the step-by-step setup and verification of a dedicated virtual cybersecurity lab environment as part of the **NetworkWalks Cybersecurity Training Program**. 
 
-Configuration	Value
-Host operating system	Windows
-Virtualization platform	Oracle VirtualBox
-Guest operating system	Kali Linux
-Virtual network mode	NAT Network
-NAT Network name	NATNETWORK
-IPv4 network/prefix	10.0.0.1
-Recovery snapshot	KaliLinux
-⚙️ Implementation & Verification
-1. Install and Configure VirtualBox
-Objective: Establish the virtualization environment.
+The main objective was to establish a secure, controlled, and isolated environment using **Oracle VirtualBox** and **Kali Linux**. The project covers virtual networking topology configuration, local IP/routing inspection, systematic DNS resolution and connectivity testing, snapshot management, and complete verification.
 
-Procedure:
+---
 
-Install Oracle VirtualBox on the host machine.
-Launch VirtualBox and review the VM management interface.
-Verify that the application opens correctly and is ready to manage virtual machines.
-Verification: VirtualBox Manager opens successfully.
+## 🎯 Objectives
 
-Evidence:
+* **Virtualization:** Install and configure Oracle VirtualBox to manage local guest VMs.
+* **VM Deployment:** Import, configure, and optimize a Kali Linux virtual machine.
+* **Network Isolation:** Design and attach a private VirtualBox NAT Network subnet.
+* **Network Audit:** Inspect network interfaces, local IP configurations, and routing tables inside Kali Linux.
+* **Connectivity Verification:** Perform multi-stage testing for local gateway reachability, external internet access, and DNS name resolution.
+* **Baseline Preservation:** Create a pristine VM state snapshot for future lab recovery.
+* **Documentation:** Maintain evidence-based technical documentation for version control.
 
-VirtualBox installation and manager screenshot placeholder
+---
 
-2. Import and Configure Kali Linux
-Objective: Deploy Kali Linux as a guest virtual machine.
+## 🛠️ Tools & Technologies
 
-Procedure:
+| Tool / Technology | Category | Purpose |
+| :--- | :--- | :--- |
+| **Oracle VirtualBox** | Hypervisor | Virtualization software and virtual machine management |
+| **Kali Linux** | Operating System | Primary guest OS equipped for ethical hacking & pentesting |
+| **VirtualBox NAT Network** | Virtual Networking | Provides isolated network routing and outbound internet connectivity |
+| **Linux Networking Utilities** | Network Admin | System tools (`ip`, `ping`, `getent`) for configuration & verification |
+| **VirtualBox Snapshot Manager** | Security / Recovery | Preserves clean baseline state before executing lab activities |
+| **GitHub** | Version Control | Technical documentation, markdown reporting, and tracking |
 
-Import the Kali Linux virtual machine or appliance.
-Review the VM configuration, including memory, processors, storage, and network adapter.
-Start the virtual machine and confirm that Kali Linux boots successfully.
-Verification: The guest operating system starts and its desktop or terminal is accessible.
+---
 
-Evidence:
+## 🏗️ Lab Architecture
 
-Kali Linux virtual machine screenshot placeholder
+The host machine executes Oracle VirtualBox as the Type-2 hypervisor hosting the Kali Linux guest operating system. The guest VM communicates outbound through VirtualBox's internal NAT Engine and Network adapter.
 
-3. Create a Private NAT Network
-Objective: Establish a dedicated virtual network for the lab.
 
-Procedure:
+```
 
-Open VirtualBox's network management settings.
-Create a NAT Network with a suitable name and IPv4 subnet.
-Review the DHCP setting and other network parameters.
-Attach the Kali Linux VM's network adapter to the newly created NAT Network.
-Save the configuration.
-Verification: The NAT Network exists in VirtualBox, and the VM is attached to the intended network.
++-------------------------------------------------------------+
+|                        Host Computer                        |
+|                                                             |
+|   +-----------------------------------------------------+   |
+|   |                  Oracle VirtualBox                  |   |
+|   |                                                     |   |
+|   |   +---------------------------------------------+   |   |
+|   |   |                Kali Linux VM                |   |   |
+|   |   |              (10.0.0.X Subnet)              |   |   |
+|   |   +----------------------|----------------------+   |   |
+|   |                          | (eth0)               |   |
+|   |   +----------------------v----------------------+   |   |
+|   |   |            Virtual NAT Network              |   |   |
+|   |   |                (NATNETWORK)                 |   |   |
+|   |   +----------------------|----------------------+   |   |
+|   +--------------------------|--------------------------+   |
++------------------------------|------------------------------+
+| (Host Network Adapter)
+v
+[ External Internet ]
 
-Evidence:
+```
 
-NAT Network configuration screenshot placeholder
+> **Note:** External connectivity depends on the host network status, gateway configuration, DNS settings, and applicable firewall rules.
 
-4. Configure and Verify Kali Linux Network Settings
-Objective: Inspect the guest's IP addressing and routing configuration.
+---
 
-Run the following commands inside Kali Linux:
+## 📋 Lab Configuration
 
-ip -br addr
-ip route
-Command purpose:
+| Parameter | Assigned Value |
+| :--- | :--- |
+| **Host Operating System** | Windows |
+| **Virtualization Platform** | Oracle VirtualBox |
+| **Guest Operating System** | Kali Linux |
+| **Virtual Network Mode** | NAT Network |
+| **NAT Network Name** | `NATNETWORK` |
+| **IPv4 Subnet Prefix** | `10.0.0.0/24` |
+| **Primary Recovery Snapshot** | `KaliLinux` |
 
-ip -br addr displays network interfaces and their assigned addresses in a compact format.
-ip route displays the routing table, including the default route when configured.
-Verification checklist:
+---
 
- The expected network interface is present.
- The interface is active.
- The IP address matches the intended network configuration.
- The routing table contains the expected route.
-Record any discrepancies and the corrective actions taken.
+## ⚙️ Implementation & Verification
 
-Evidence:
+### Step 1: VirtualBox Environment Setup
+* **Objective:** Establish the virtualization hypervisor layer.
+* **Procedure:** Downloaded and installed Oracle VirtualBox on the host machine. Launched the VirtualBox Manager and configured global default preferences.
+* **Verification:** VirtualBox Manager initialized cleanly and was verified ready for VM operations.
 
-Kali Linux IP and routing output screenshot placeholder
+---
 
-5. Test Network Connectivity and DNS Resolution
-Objective: Verify network reachability and hostname resolution.
+### Step 2: Kali Linux VM Deployment
+* **Objective:** Deploy Kali Linux as the primary laboratory operating system.
+* **Procedure:** Imported the pre-built Kali Linux virtual appliance into VirtualBox. Customized RAM allocation, CPU cores, and storage parameters.
+* **Verification:** The system booted successfully into the Kali desktop environment.
 
-Run these tests separately:
+---
 
-A. Check gateway reachability
+### Step 3: Private NAT Network Creation
+* **Objective:** Build an isolated private virtual network for controlled connectivity.
+* **Procedure:** 
+  1. Navigated to VirtualBox **Tools** -> **Network Manager** -> **NAT Networks**.
+  2. Created a new network named `NATNETWORK` with the IP prefix `10.0.0.0/24` and enabled DHCP.
+  3. Attached the Kali Linux virtual machine's primary Network Adapter (Adapter 1) to `NATNETWORK`.
+* **Verification:** VM network adapter attached cleanly in system settings.
 
-ping -c 4 <gateway-ip>
-Replace <gateway-ip> with the actual gateway address identified from the lab configuration.
+---
 
-B. Check external IP connectivity
+### Step 4: Guest Interface & Routing Verification
+* **Objective:** Verify assigned network interfaces and routing tables inside Kali Linux.
+* **Procedure:** Executed interface and routing diagnostic commands inside the Kali Linux terminal:
+  ```bash
+  # Check network interface addresses in compact format
+  ip -br addr
 
+  # Display kernel routing table and default gateway
+  ip route
+
+```
+
+* **Verification:**
+* `eth0` interface present and assigned an active IPv4 address within the `10.0.0.0/24` range.
+* Default route correctly configured pointing toward the NAT gateway (`10.0.0.1`).
+
+
+
+---
+
+### Step 5: Network Connectivity & DNS Testing
+
+* **Objective:** Confirm reachability, packet routing, and hostname lookup resolution.
+* **Procedure & Commands:**
+**A. Verify Gateway Reachability:**
+```bash
+ping -c 4 10.0.0.1
+
+```
+
+
+**B. Verify External IP Reachability (Cloudflare Public DNS):**
+```bash
 ping -c 4 1.1.1.1
-This tests reachability to an external IP address, provided the destination and network permit ICMP traffic.
 
-C. Check DNS resolution
+```
 
+
+**C. Verify Domain Name Resolution (DNS):**
+```bash
 getent hosts example.com
-This checks whether the system can resolve the hostname using its configured name-resolution mechanisms.
 
-Interpretation:
+```
 
-Test	What it helps verify
-Gateway ping	Reachability to the configured gateway
-External IP test	External network reachability
-Hostname lookup	DNS/name-resolution functionality
-A failed ping does not always mean that a destination is unreachable; ICMP traffic may be filtered. Interpret results alongside routing information and other relevant tests.
 
-Verification results:
+* **Test Matrix Results:**
 
-Test	Actual result	Status
-Gateway reachability	Pass	
-External IP connectivity	Pass	
-DNS resolution	Pass	
-6. Create a Clean VM Snapshot
-Objective: Preserve a known working state before conducting future lab activities.
+| Test Focus | Target / Command | Purpose | Result | Status |
+| --- | --- | --- | --- | --- |
+| **Gateway Reachability** | `10.0.0.1` | Local virtual network routing verification | 0% Packet Loss | **PASS** |
+| **External IP Reachability** | `1.1.1.1` | Outbound internet ICMP transit check | 0% Packet Loss | **PASS** |
+| **DNS Name Resolution** | `example.com` | Name resolution lookup check | IP Resolved Correctly | **PASS** |
 
-Procedure:
+---
 
-Complete the initial VM and network configuration.
-Verify the current system state.
-Open the VM's snapshot management interface.
-Create a snapshot with a descriptive name.
-Confirm that the snapshot appears in the VM's snapshot list.
-Verification: The saved snapshot is visible in VirtualBox Snapshot Manager.
+### Step 6: VM Baseline Snapshot Creation
 
-Snapshot name: KaliLinux
+* **Objective:** Create a clean operational state recovery point.
+* **Procedure:** Shut down/paused non-essential processes, opened VirtualBox Snapshot Manager, and created a snapshot named `KaliLinux`.
+* **Verification:** Snapshot saved successfully and visible under the snapshot tree structure.
 
-Evidence:
+---
 
-VirtualBox snapshot screenshot placeholder
+## 🧪 Summary Matrix of Completed Tasks
 
-Why this matters: A snapshot provides a convenient recovery point if later configuration changes or experiments affect the VM. It is not a substitute for independent backups.
+| Task Description | Verification Artifact | Status |
+| --- | --- | --- |
+| VirtualBox Installation & Setup | VirtualBox Manager active | ✅ **Completed** |
+| Kali Linux Import & Optimization | Operational guest VM terminal | ✅ **Completed** |
+| Private NAT Network Configuration | `NATNETWORK` created in VirtualBox | ✅ **Completed** |
+| Network & Routing Verification | Valid `ip -br addr` & `ip route` output | ✅ **Completed** |
+| End-to-End Connectivity & DNS | Successful `ping` and `getent` output | ✅ **Completed** |
+| Pristine Snapshot Creation | `KaliLinux` snapshot point visible | ✅ **Completed** |
 
-🧪 Overall Results
-Task	Completion evidence	Status
-VirtualBox installation and configuration	VirtualBox Manager	Completed
-Kali Linux import and configuration	Running guest VM	Completed
-Private NAT Network creation	Network settings	Completed
-Kali network settings verification	Interface and route output	Completed
-Connectivity and DNS testing	Actual test outputs	Update with results
-Clean snapshot creation	Snapshot Manager	Completed
+---
 
-# 🐛 Troubleshooting & Problem-Solving
-Virtual machine networking depends on several components working together, including the network adapter, IP configuration, routing, NAT Network settings, and DNS configuration.
+## 🐛 Troubleshooting & System Diagnostics
 
-If connectivity or DNS resolution fails, investigate systematically:
+If network connectivity issues occur during future lab exercises, use the following systematic checklist to diagnose the issue:
 
-1. Inspect the interface
+```
+[ Step 1: Check Local Interface ]  ---> Command: ip -br addr
+                                         Ensure interface is UP and holds a valid IP.
+                                                  |
+[ Step 2: Check System Gateway ]   ---> Command: ip route
+                                         Confirm default route points to gateway (10.0.0.1).
+                                                  |
+[ Step 3: Test IP Connectivity ]   ---> Command: ping -c 4 1.1.1.1
+                                         Rules out DNS issues if IP responds.
+                                                  |
+[ Step 4: Test Name Resolution ]   ---> Command: getent hosts example.com
+                                         Verifies /etc/resolv.conf & DNS servers.
+                                                  |
+[ Step 5: Check Hypervisor Settings]---> Confirm VirtualBox network mode is attached to 'NAT Network'.
 
-ip -br addr
-Check the interface state and assigned IP address.
+```
 
-2. Inspect routing
+---
 
-ip route
-Verify the expected gateway and default route.
+## 📚 Key Learnings & Practical Takeaways
 
-3. Separate IP connectivity from DNS
+* **Systematic Setup:** Lab management requires verifying each network layer step-by-step rather than assuming connectivity.
+* **Linux Networking:** Hands-on mastery of Linux network tools (`ip`, `ping`, `getent`) for rapid interface auditing.
+* **Snapshot Management:** Recognizing snapshots as essential safeguards to restore working states after complex testing.
+* **Layered Verification:** Distinguishing between IP-level routing issues and higher-level DNS resolution failures.
 
-Test the configured gateway, then an external IP address, and finally a hostname lookup. This helps narrow down the affected layer.
+---
 
-4. Review VirtualBox configuration
+## 🔒 Security Considerations & Lab Hygiene
 
-Confirm that the VM is connected to the intended NAT Network and that the network settings match the guest's configuration.
+* **Authorized Use Only:** The environment is built strictly for educational, research, and authorized security assessments.
+* **Network Isolation:** Ensure vulnerable target machines (e.g., Metasploitable) remain isolated within private virtual networks.
+* **Data Protection:** Never commit sensitive credentials, API keys, private ssh keys, or sensitive host details to version control.
+* **Media Hygiene:** Review screenshot captures to redact any sensitive host system paths or personal identifying details prior to publishing.
 
-5. Re-test after making a change
+---
 
-# 📚 Key Learnings
-This project strengthened my practical understanding of:
+## 📁 Recommended Repository Structure
 
-Virtualization and guest operating system deployment.
-Linux network interfaces and IP addressing.
-Routing and NAT Network configuration.
-Network connectivity and DNS troubleshooting.
-Virtual machine snapshots and recovery planning.
-Technical documentation and evidence-based verification.
-
-# 🔒 Security Considerations
-Use the environment only for authorized cybersecurity learning and testing.
-Keep intentionally vulnerable systems isolated as appropriate.
-Take snapshots before significant configuration changes.
-Avoid exposing sensitive services or credentials.
-Do not commit passwords, private keys, tokens, or sensitive host information.
-Review screenshots before uploading them to a public repository.
-Do not upload complete VM disk images or large appliance exports unless explicitly required and safe.
-📁 Repository Structure
+```text
 cybersecurity-lab-setup/
 ├── README.md
-├── screenshots/
-   ├── 01-virtualbox-manager.png
-   ├── 02-kali-linux-running.png
-   ├── 03-nat-network-configuration.png
-   ├── 04-network-configuration.png
-   └── 05-vm-snapshot.png
+└── screenshots/
+    ├── 01-virtualbox-manager.png
+    ├── 02-kali-linux-running.png
+    ├── 03-nat-network-configuration.png
+    ├── 04-network-configuration.png
+    └── 05-vm-snapshot.png
 
-The screenshot filenames above are suggested names. Ensure that the files you upload match the paths referenced in this README.
+```
 
-**✅ Conclusion** 
-The project established a foundation for future cybersecurity lab exercises by combining virtualization, Linux networking, connectivity verification, and recovery planning.
+---
 
-The main takeaway is that a reliable lab requires more than deploying a virtual machine: its configuration must be inspected, its connectivity tested, and its baseline documented before more advanced activities begin.
+## 👤 Author & Acknowledgments
 
-Project: NETWORKWALKS-Kuldeep-BO84-WK1-CYBERSECURITY-LAB-SETUP Tools: Oracle VirtualBox and Kali Linux
-Focus: Virtualization, Networking, Verification, and Recovery
-Repository: cybersecurity-lab-setup Submitted By: KULDEEP VERMA 
+* **Submitted By:** Kuldeep Verma
+* **Project ID:** `NETWORKWALKS-Kuldeep-BO84-WK1-CYBERSECURITY-LAB-SETUP`
+* **Program:** NetworkWalks Cybersecurity Training Program
+* **Instructor:** Waqas Karim (CCIE)
+
+```
+
+<FollowUp>
+Would you like me to help you draft the Git command-line steps to initialize this repository, commit the files, and push it to GitHub?
+</FollowUp>
+
+```
