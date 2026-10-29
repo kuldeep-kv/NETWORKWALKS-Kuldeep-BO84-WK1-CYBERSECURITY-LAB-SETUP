@@ -121,14 +121,13 @@ v
 ### Step 4: Guest Interface & Routing Verification
 * **Objective:** Verify assigned network interfaces and routing tables inside Kali Linux.
 * **Procedure:** Executed interface and routing diagnostic commands inside the Kali Linux terminal:
-  ```bash
+
   # Check network interface addresses in compact format
   ip -br addr
 
   # Display kernel routing table and default gateway
   ip route
 
-```
 
 * **Verification:**
 * `eth0` interface present and assigned an active IPv4 address within the `10.0.0.0/24` range.
@@ -237,7 +236,7 @@ If network connectivity issues occur during future lab exercises, use the follow
 
 ## 📁 Recommended Repository Structure
 
-```text
+
 cybersecurity-lab-setup/
 ├── README.md
 └── screenshots/
@@ -247,7 +246,7 @@ cybersecurity-lab-setup/
     ├── 04-network-configuration.png
     └── 05-vm-snapshot.png
 
-```
+
 
 ---
 
@@ -260,8 +259,3 @@ cybersecurity-lab-setup/
 
 ```
 
-<FollowUp>
-Would you like me to help you draft the Git command-line steps to initialize this repository, commit the files, and push it to GitHub?
-</FollowUp>
-
-```
