@@ -187,7 +187,8 @@ Private NAT Network creation	Network settings	Completed
 Kali network settings verification	Interface and route output	Completed
 Connectivity and DNS testing	Actual test outputs	Update with results
 Clean snapshot creation	Snapshot Manager	Completed
-🐛 Troubleshooting & Problem-Solving
+
+# 🐛 Troubleshooting & Problem-Solving
 Virtual machine networking depends on several components working together, including the network adapter, IP configuration, routing, NAT Network settings, and DNS configuration.
 
 If connectivity or DNS resolution fails, investigate systematically:
@@ -212,7 +213,7 @@ Confirm that the VM is connected to the intended NAT Network and that the networ
 
 5. Re-test after making a change
 
-📚 Key Learnings
+# 📚 Key Learnings
 This project strengthened my practical understanding of:
 
 Virtualization and guest operating system deployment.
@@ -221,7 +222,8 @@ Routing and NAT Network configuration.
 Network connectivity and DNS troubleshooting.
 Virtual machine snapshots and recovery planning.
 Technical documentation and evidence-based verification.
-🔒 Security Considerations
+
+# 🔒 Security Considerations
 Use the environment only for authorized cybersecurity learning and testing.
 Keep intentionally vulnerable systems isolated as appropriate.
 Take snapshots before significant configuration changes.
@@ -241,7 +243,7 @@ cybersecurity-lab-setup/
 
 The screenshot filenames above are suggested names. Ensure that the files you upload match the paths referenced in this README.
 
-** ✅ Conclusion ** 
+**✅ Conclusion** 
 The project established a foundation for future cybersecurity lab exercises by combining virtualization, Linux networking, connectivity verification, and recovery planning.
 
 The main takeaway is that a reliable lab requires more than deploying a virtual machine: its configuration must be inspected, its connectivity tested, and its baseline documented before more advanced activities begin.
